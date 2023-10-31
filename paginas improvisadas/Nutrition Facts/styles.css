@@ -1,0 +1,171 @@
+.main {
+    width: 260px;
+    border: 2px solid rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 5px;
+}
+
+body {
+    font-family: "open sans", sans-serif;
+    padding-top: 15px;
+}
+
+.bold {
+    font-weight: 900;
+    margin: 0 2px;
+    font-size: 32px;
+    letter-spacing: 0.5px;
+    width: 100%;
+}
+
+.divider {
+    border-bottom: 1px solid grey;
+    width: 257px;
+}
+
+
+.main p {
+    margin: 2px 2px;
+}
+
+.chiquito {
+    font-weight: 900;
+    font-size: 16px;
+    white-space: nowrap;
+    display: flex;
+}
+
+span {
+    margin-left: 43px; 
+    justify-content: right;
+}
+
+.large {
+    border-bottom: 10px solid black;
+}
+
+.mas-chiquito {
+    font-size: 15px;
+}
+
+.right {
+    margin-left: 49px;
+    font-size: 37px;
+}
+
+.grande {
+    font-weight: 700;
+    font-size: 33px;
+    white-space: nowrap;
+    position: relative;
+    top: -10px;
+}
+
+.medium {
+    border-bottom: 5px solid black;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+h2 {
+    text-align: right;
+    font-weight: 800;
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.left {
+    margin-left: -1px;
+    white-space: unset;
+    display: unset;
+    font-size: 14px;
+}
+
+.mas {
+    margin-left: 136px;
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.hi {
+    justify-content: unset;
+    margin-left: unset;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.divider p {
+    font-size: 13px;
+}
+
+.cinco {
+    margin-left: 111px;
+    font-weight: 900;
+}
+
+.cero {
+    font-weight: 900;
+    margin-left: 110px;
+}
+
+.siete {
+    font-weight: 900;
+    margin-left: 117px;
+}
+
+.trece {
+    margin-left: 50px;
+    font-weight: 900;
+}
+
+.un {
+    width: 227px;
+    margin-left: 30px;
+}
+
+.sugar {
+    margin-left: 30px;
+}
+
+.veinte {
+    font-weight: 900;
+    margin-left: 13px;
+}
+
+.tres {
+    margin-left: 177px;
+}
+
+.diez {
+    margin-left: 122px;
+}
+
+.veinte-dos {
+    margin-left: 124px;
+}
+
+.cuarenta-cinco {
+    margin-left: 166px;
+}
+
+.bottom {
+    margin-bottom: 5px;
+}
+
+.cosas {
+    margin-bottom: 10px;
+}
+
+.ultimate {
+    font-size: 10px;
+}
+
+.ultimo {
+    margin-left: unset;
+    justify-content: unset;
+    display: inline-block;
+    margin-left: 5px;
+
+}
+
