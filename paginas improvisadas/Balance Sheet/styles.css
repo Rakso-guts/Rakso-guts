@@ -1,0 +1,164 @@
+body {
+    font-family: sans-serif;
+}
+
+section {
+    border: 0.14rem solid rgb(190, 184, 184);
+    width: 100%;
+    max-width: 655px;
+    margin: 0 auto;
+    min-width: 150px;
+}
+
+h1, h2{
+    margin-left: 1.2rem;
+}
+
+h2 {
+    font-size: 17px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+    height: 4vh;
+    background-color: #0a0a23;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 1.5rem;
+  }
+  
+  p {
+    margin: 0;
+    padding: 10px;
+    margin-right: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: row;
+      overflow: hidden;
+    }
+  }
+
+  caption {
+    display: flex;
+    justify-content: left;
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    color: #356eaf;
+  }
+
+span {
+    display: flex;
+    padding-left: 1rem;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+    width: 100%;
+    background-color: #dfdfe2;
+    padding-top: 0.4rem;
+}
+
+ th {
+    font-weight: normal;
+}
+
+table {
+  width: 100%;
+}
+
+.iden {
+  font-weight: normal;
+  margin-left: 0.1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+  background-color: unset;
+}
+
+td {
+  position: relative;
+  top: -1rem;
+  left: -5rem;
+  padding-left: 4rem;
+  text-align: right;
+}
+
+.divider {
+  border-bottom: 4px solid #0a0a23;
+  width: 210%;
+  margin-left: 0.6rem;
+  margin-right: 1rem;
+  height: 1.5rem;
+}
+
+.none {
+  border-bottom: unset;
+}
+
+.menos {
+  max-width: 615px;
+}
+
+.lest {
+  width: 368%;
+}
+
+.bottom {
+  position: relative;
+  top: 0.1rem;
+  font-weight: bold;
+}
+
+.hi {
+  position: relative;
+  top: -1.7rem;
+}
+
+.alone {
+  position: relative;
+  top: 0.1rem;
+  font-weight: bold;
+}
+
+.go {
+  position: relative;
+  top: 0.1rem;
+  font-weight: bold;
+}
+
+
+.pon:hover {
+  background-color: #7ab3f4;
+}
+
+.que:hover {
+  background-color: #7ab3f4;
+}
+
+.yupi:hover {
+  background-color: #7ab3f4;
+}
+
+.pon {
+  background-color: white;
+}
+
+.que {
+  background-color: white;
+}
+
+.yupi {
+  background-color: white;
+}
