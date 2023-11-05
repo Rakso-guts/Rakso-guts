@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.marker {
+    background-color: #a52a2a;
+    width: 200px;
+    height: 25px;
+    margin: 10px auto ;
+}
+
+.red {
+    background:linear-gradient(180deg, rgb(91, 28, 28), rgb(244, 65, 100), rgb(72, 15, 15)) ;
+    box-shadow: 0px 0px 20px 0 red;
+}
+
+.green {
+    background: linear-gradient(180deg, rgb(27, 83, 27), rgb(140, 250, 85), rgb(31, 72, 31));
+    box-shadow: 0px 0px 20px green;
+}
+
+.blue {
+    background: linear-gradient(180deg, rgb(25, 25, 123), rgb(32, 107, 237), rgb(25, 25, 111));
+    box-shadow: 0px 0px 20px 0 blue;
+}
+
+.sleeve {
+    width: 55px;
+    height: 25px;
+    display: inline-block;
+}
+
+.manga {
+    width: 115px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.4);
+    display: inline-block;
+    border-left: 10px double rgb(0, 0, 0, 0.75)
+}  
+

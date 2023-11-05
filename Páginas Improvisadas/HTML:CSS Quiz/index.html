@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="Logo from Free Code Camp" class="logo">
+            <h1>HTML/CSS Quiz</h1>
+            <nav>
+                <ul>
+                    <li><a href="#info" class="in">INFO</a></li>
+                    <li><a href="#html">HTML</a></li>
+                    <li><a href="#css">CSS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <form action="https://freecodecamp.org/practice-project/accessibility-quiz">
+            <section role="region" aria-labelledby="student-info" class="section-1" >
+                <h2 id="info">Student info</h2>
+                <div class="divider"></div>
+                <label for="name">Name: 
+                    <input type="text" id="name" name="student-name"><br>
+                </label>
+                <label for="email">Email:
+                    <input type="email" id="email" name="student-email"><br>
+                </label>
+                <label for="date">D.O.B: <span class="sr-only">(Date of Birth)</span>
+                    <input type="date" id="date" name="student-date"> <br>
+                </label>
+            </section>
+            <section role="region" aria-labelledby="question-html">
+                <h2 id="html">HTML</h2>
+                <div class="divider"></div>
+                <h2 class="over">Question #1</h2>
+                <fieldset>
+                    <legend>The legend element represents a caption for the content of its parent fieldset element</legend>
+                    <label for="true">
+                        <input type="radio" id="true" name="q1"> True <br>
+                    </label>
+                    <label for="false">
+                        <input type="radio" id="false" name="q1"> False
+                    </label>
+                </fieldset>
+                <h2 class="over">Question #2</h2>
+                <fieldset>
+                    <legend>A label element nesting an input element is required to have a for attribute with the same value as the input's id</legend>
+                    <label for="true-2">
+                        <input type="radio" id="true-2" name="q2"> True <br>
+                    </label>
+                    <label for="false-2">
+                        <input type="radio" id="false-2" name="q2"> False
+                    </label>
+                </fieldset>
+            </section>
+            <section role="region" aria-labelledby="question-css" class="css-one" id="css">
+                <h2>CSS</h2>
+                <div class="divider"></div>
+                <label for="front-end" class="lest">Are you a frontend developer?
+                    <select name="front-end" id="front-end" required>
+                        <option value="">Select an option</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </label>
+                <label for="god" class="lest">Do you have any questions:
+                    <textarea name="god" id="god" cols="20" rows="5" placeholder="Who is flexbox..."></textarea>
+                </label>
+            </section>
+            <button type="submit" id="submit" name="submit">Send</button>
+        </form>
+        <footer>
+            <address>
+                <a href="https://freecodecamp.org/">freeCodeCamp</a> <br>
+                San Francisco <br>
+                California <br>
+                USA <br>
+            </address>
+        </footer>
+    </main>
+</body>
+</html>
