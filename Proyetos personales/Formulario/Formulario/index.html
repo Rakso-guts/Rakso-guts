@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario</title>
+</head>
+<body class="color">
+  <main>
+    <div class="again">
+      <h1 id="title">Encuesta para ti</h1>
+      <p id="description">Esta es una pequeña encuesta (hecha por mi), <br>espero que lo disfrutes.¡VAMOS!</p>
+      <div class="main">
+          <form id="survey-form">
+            <fieldset>
+              <label id="name-label" class="margin">Nombre:
+                <input id="name" type="text"required placeholder="Oscar Manuel" class="gas">
+              </label>
+              <label id="email-label" class="margin">Correo Eléctronico:
+                <input id="email" type="email" required placeholder="oscar@gmail.com" class="gas">
+              </label>
+              <label id="number-label" class="margin">Edad:
+                <input id="number" type="number" min="13" max="120" required placeholder="18" class="gas">
+              </label>
+            </fieldset>
+            <fieldset>
+              <label for="dropdown">¿Cuántos lenguajes de programación dominas?
+                <select id="dropdown" class="block">
+                  <option>Ninguna</option>
+                  <option>Uno</option>
+                  <option>Dos</option>
+                  <option>No sé</option>
+              </label>
+            </select>
+            <fieldset>
+                <legend class="programar">¿Te gusta programar?</legend>
+              <label>
+                <input type="radio" value="hello" name="cat" class="lang" id="si" checked> Si
+              </label>
+              <label>
+                <input type="radio" value="hi" name="cat" class="lang" id="no"> No
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend class="eres">¿Cómo eres cuando programas?</legend>
+              <label class="motivado">
+                <input type="checkbox" value="motivado" checked> Motivado <br>
+              </label>
+              <label>
+                <input type="checkbox" value="enojon"> Enojon <br>
+              </label>
+              <label>
+                <input type="checkbox" value="miedoso"> Miedoso <br>
+              </label>
+              <label>
+                <input type="checkbox" value="alegre"> Alegre <br>
+              </label>
+              <label>
+                <input type="checkbox" value="neutro"> Neutro <br>
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend class="motivo">¿Que te motivó a aprender a programar?</legend>
+              <textarea name="opinion" cols="30" rows="8" placeholder="Yo estaba en el sofa..." class="texto"></textarea>
+            </fieldset>
+            <input type="submit" name="submit">
+          </div>
+      </form>
+      </div>
+  </main>
+</body>
+</html>
