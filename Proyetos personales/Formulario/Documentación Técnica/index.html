@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta content="viewport" >
+    </head>
+    <body>
+        <main id="main-doc">
+            <nav id="navbar">
+                <header>Documentación Técnica Sobre CSS</header>
+            <a class="nav-link pol" href="#Introducción">Introducción</a>
+            <a class="nav-link" href="#Sintaxis_Básica_de_CSS">Sintaxis Básica de CSS</a>
+            <a class="nav-link" href="#Selección_de_Elementos_HTML">Selección de Elementos HTML</a>
+            <a class="nav-link" href="#Propiedades_CSS_Fundamentales">Propiedades CSS Fundamentales</a>
+            <a class="nav-link" href="#Modelo_de_Caja">Modelo de Caja</a>
+            <a class="nav-link" href="#Colores_y_Fondos">Colores y Fondos</a>
+            <a class="nav-link" href="#Tipografía_y_Fuentes">Tipografía y Fuentes</a>
+            <a class="nav-link" href="#Margen_y_Relleno_(Margin_and_Padding)">Margen y Relleno (Margin and Padding)</a>
+            <a class="nav-link" href="#Estilos_de_Texto_y_Enlaces">Estilos de Texto y Enlaces</a>
+            <a class="nav-link" href="#Estilización_de_Listas">Estilización de Listas</a>
+            <a class="nav-link" href="#Creación_de_Menús_de_Navegación_(Navigation_Menus)">Creación de Menús de Navegación (Navigation Menus)</a>
+            <a class="nav-link" href="#Estilos_de_Tablas_(Table_Styles)">Estilos de Tablas (Table Styles)</a>
+            <a class="nav-link" href="#Animaciones_y_Transiciones_(Animations_and_Transitions)">Animaciones y Transiciones (Animations and Transitions)</a>
+            </nav>
+            <section class="main-section" id="Introducción">
+                <header class="hola">Introducción</header>
+                    <p>CSS es un acrónimo de "Cascading Style Sheets", que se traduce como "Hojas de Estilo en Cascada". Básicamente, CSS es un lenguaje de marcado utilizado para describir la presentación de un documento escrito en HTML (Hypertext Markup Language). Mientras que HTML se encarga de la estructura y el contenido de una página web, CSS se encarga del aspecto visual y el diseño. En otras palabras, CSS le da estilo a tu página web.</p>
+                    <p>Imagina un sitio web sin CSS. Sería como un libro sin formato, lleno de texto sin ningún tipo de estructura visual. CSS es lo que permite que los desarrolladores web apliquen colores, fuentes, márgenes, espaciado y otros estilos visuales a los elementos de una página web. Esto es fundamental para la experiencia del usuario y la apariencia general de un sitio web. Un diseño atractivo y coherente puede marcar la diferencia entre un sitio web exitoso y uno que los visitantes abandonan rápidamente.</p>
+                    <p> usos comunes de CSS en el desarrollo web:</p>
+                    <ol>
+                        <li><span>Diseño y Estilización de Sitios Web:</span>
+                            El uso más común de CSS es dar estilo y diseño a sitios web. Permite a los desarrolladores web controlar la apariencia visual de una página web, incluyendo aspectos como colores, fuentes, tamaños de texto, márgenes, espaciados, imágenes de fondo y disposición de elementos. Los diseñadores web utilizan CSS para crear interfaces atractivas y coherentes que atraigan a los usuarios y proporcionen una experiencia de navegación agradable.
+                            Por ejemplo, puedes utilizar CSS para definir el color de fondo de la página, el tipo y tamaño de fuente para el texto, la apariencia de los botones, el espaciado entre párrafos y muchas otras propiedades visuales. CSS también es esencial para hacer que un sitio web sea responsivo, adaptando su diseño a diferentes tamaños de pantalla y dispositivos.</li>
+                        <li>
+                            <span>Control de la Presentación de Documentos Impresos:</span>
+    CSS no se limita a la presentación en línea, también se utiliza para controlar la apariencia de documentos impresos. Mediante el uso de CSS, puedes definir estilos específicos para la impresión de una página web. Esto es útil para crear versiones imprimibles de páginas web, como facturas, currículums, informes y más. CSS permite ajustar el diseño y la estructura de la página para que se vea adecuadamente en papel.
+    Puedes establecer propiedades de impresión como el tamaño del papel, los márgenes, los encabezados y pies de página, y las fuentes a través de CSS. Esto garantiza que la versión impresa del documento tenga un formato limpio y profesional.
+                        </li>
+                    </ol>
+            </section>
+            <section class="main-section" id="Sintaxis_Básica_de_CSS">
+                <header>Sintaxis Básica de CSS</header>
+                <img src="https://i.pinimg.com/564x/49/9b/a0/499ba0fb4c9ccf2d2b26c01d35ae5d8f.jpg" alt="sintaxis básica de css." class="sintaxis">
+                        <code class="sintax">
+                        /* Selección del elemento al que se aplicará el estilo */ <br>
+                        elemento {<br>
+                            background-color: #3498db; <br>
+                          }                      
+                    </code>
+                  
+                    <ul>
+                        <li>El código CSS comienza con un comentario (/* ... */) que se utiliza para describir y documentar el código, pero que no tiene ningún efecto en el estilo real.</li>
+                        <li>A continuación, se selecciona el elemento HTML al que se aplicará el estilo. En este caso, hemos utilizado el selector genérico elemento. Puedes reemplazar "elemento" con el nombre del elemento HTML al que deseas aplicar el estilo, como p para párrafos, h1 para encabezados, #miID para elementos con un ID específico, o .miClase para elementos con una clase específica.</li>
+                        <li>Después de seleccionar el elemento, se define la regla de estilo dentro de las llaves { }. En nuestro ejemplo, estamos cambiando el color de fondo del elemento. Para hacerlo, usamos la propiedad background-color y le asignamos un valor. En este caso, el valor es #3498db, que representa un color azul.</li>
+                    </ul>
+                    <p>En CSS (Cascading Style Sheets), puedes aplicar estilos a elementos HTML para controlar su apariencia en una página web. El código CSS se compone de reglas que seleccionan elementos HTML y les aplican propiedades de estilo.</p>
+                    <ul>
+                        <li>
+                            <span>Selector:</span> El selector es la parte del código que elige el elemento al que deseas aplicar el estilo. Puede ser un elemento específico (como p o h1), un ID (#miID) o una clase (.miClase). En nuestro ejemplo, usamos un selector genérico llamado "elemento".
+                        </li>
+                        <li>
+                            <span>Propiedad CSS:</span> Las propiedades CSS describen qué aspecto deseas cambiar en el elemento seleccionado. En nuestro caso, usamos la propiedad background-color para controlar el color de fondo del elemento.
+                        </li>
+                        <li>
+                            <span>Valor:</span> El valor de la propiedad especifica cómo se verá el elemento. En este caso, hemos usado #3498db como valor, que representa un color azul.
+                        </li>
+                    </ul>
+                    <p>
+                        Al modificar las propiedades y valores en tus reglas CSS, puedes personalizar la apariencia de tu sitio web, como cambiar los colores, las fuentes, los márgenes y mucho más. El CSS es una herramienta esencial para diseñadores web, ya que permite crear diseños atractivos y coherentes en sus páginas web.
+                    </p>
+            </section>
+            <section class="main-section" id="Selección_de_Elementos_HTML">
+                <header>Selección de Elementos HTML</header>
+                    <p>
+                        La selección de elementos HTML se realiza principalmente a través de CSS (Cascading Style Sheets). Para ello, se utiliza un selector que elige elementos HTML específicos para aplicar estilos o funcionalidad. A continuación, te proporcionaré un ejemplo de código y dos ejemplos de selección de elementos para explicarlo de manera sencilla.
+                    </p>
+                    <code>
+                        &lt;!DOCTYPE html&gt;<br>
+                        &lt;html&gt;<br>
+                        &lt;head&gt;<br>
+                            &lt;style&gt;<br>
+                                p { <br>
+                                    color: blue;<br>
+                                } <br>
+                
+                                .destacado { <br>
+                                    background-color: yellow;<br>
+                                } <br>
+                            &lt;/style&gt; <br>
+                        &lt;/head&gt;<br>
+                        &lt;body&gt;<br>
+                            &lt;h1&gt;Mi Página Web&lt;/h1&gt;<br>
+                            &lt;p&gt;Este es un párrafo normal.&lt;/p&gt; <br>
+                            &lt;p class="destacado"&gt;Este párrafo está destacado.&lt;/p&gt; <br>
+                            &lt;p&gt;¡Aquí tienes otro párrafo!&lt;/p&gt;<br>
+                        &lt;/body&gt;<br>
+                        &lt;/html&gt;<br>
+                    </code>
+                    <p>
+                        En este ejemplo, hemos seleccionado elementos HTML de dos maneras diferentes:
+                    </p>
+                    <ol>
+                        <li>
+                            <span>selector de elementos por etiqueta (Ejemplo 1):</span> Hemos seleccionado todos los elementos &ltp&gt (párrafos) en el documento y les hemos aplicado un estilo que cambia su color de texto a azul. Esto significa que todos los párrafos se verán de color azul.
+                        </li>
+                        <li>
+                            <span>Selector de elementos por clase (Ejemplo 2):</span> Hemos creado una clase llamada "destacado" y la hemos aplicado a uno de los párrafos. Luego, hemos seleccionado todos los elementos con la clase "destacado" y les hemos aplicado un fondo amarillo. Esto hace que solo el párrafo con la clase "destacado" tenga un fondo amarillo.
+                        </li>
+                    </ol>
+                    <p>
+                        En resumen, los selectores de elementos HTML en CSS te permiten aplicar estilos y funcionalidades de manera selectiva a ciertos elementos en tu página web. Puedes seleccionar por etiqueta, clase, identificador, atributos y mucho más, lo que te da un gran control sobre el diseño y la apariencia de tu sitio web. Es una herramienta esencial para el diseño web y la creación de páginas atractivas y funcionales.
+                    </p>
+            </section>
+            <section class="main-section" id="Propiedades_CSS_Fundamentales">
+                <header class="gap">Propiedades CSS Fundamentales</header>
+                <ol>
+                        <li><span>Propiedad color:</span></li>
+                        <ul>
+                            <li>
+                                <span>Código de ejemplo:</span>
+                            </li>
+                        <code class="color">
+                            p { <br>
+                                color: blue; <br>
+                              }                          
+                        </code>
+                            <li>
+                                La propiedad color se utiliza para definir el color del texto dentro de un elemento. Puedes especificar el color en palabras clave (como "blue") o en formatos como códigos hexadecimales (#0000FF).
+                            </li>
+                            <li>Es importante elegir colores que sean legibles y que se ajusten al estilo general de tu sitio web para mejorar la experiencia del usuario.</li>
+                        </ul>
+                        <li><span>Propiedad font-size:</span></li>
+                        <ul>
+                            <li><span>Código de ejemplo:</span></li>
+                            <code class="color">
+                                h1 { <br>
+                                    font-size: 36px;<br>
+                                  }                              
+                            </code>
+                            <li>
+                                La propiedad font-size determina el tamaño del texto. Puedes definirlo en píxeles (px), em, porcentajes (%), o palabras clave como "small," "medium," o "large."
+                            </li>
+                            <li>
+                                Ajustar el tamaño de fuente es clave para la legibilidad y el diseño de tu sitio. Elige tamaños que sean adecuados para diferentes elementos, como títulos, párrafos y encabezados.
+                            </li>
+                        </ul>
+                        <li><span>Propiedad background-color:</span></li>
+                        <ul>
+                            <li><span>Código de ejemplo:</span></li>
+                            <code class="color">
+                                .container { <br>
+                                    background-color: #F0F0F0;<br>
+                                  }                              
+                            </code>
+                            <li> La propiedad background-color establece el color de fondo de un elemento. Puedes usar códigos de color para personalizar el fondo.</li>
+                            <li>
+                                Elegir colores de fondo que contrasten adecuadamente con el texto y sean coherentes con el diseño de tu sitio web mejora la legibilidad y la estética.
+                            </li>
+                        </ul>
+                        <li><span>Propiedad margin:</span></li>
+                        <ul>
+                            <li>
+                                <span>Código de ejemplo:</span>
+                            </li>
+                            <code>
+                                .box {<br>
+                                    margin: 10px;<br>
+                                  }                              
+                            </code>
+                            <li> La propiedad margin define el espacio en blanco alrededor de un elemento. Puedes establecer márgenes en píxeles, em o porcentajes.</li>
+                            <li> Utiliza márgenes para crear espaciado entre elementos y mejorar la disposición de tu contenido en la página.</li>
+                        </ul>
+                        <li><span>Propiedad border:</span></li>
+                        <ul>
+                            <li><span>Código de ejemplo:</span></li>
+                            <code class="color">
+                                .image { <br>
+                                border: 2px solid #000;<br>
+                              }
+                            </code>
+                            <li>La propiedad border permite definir el estilo, grosor y color de los bordes de un elemento. Puedes personalizarlos según tus necesidades.</li>
+                            <li>Los bordes son útiles para resaltar elementos o crear divisiones visuales en tu diseño.</li>
+                        </ul>
+                    </ol>
+                    <p>Estas son solo algunas de las propiedades CSS fundamentales que puedes utilizar para dar estilo a tus páginas web. Al comprender y aplicar estas propiedades de manera efectiva, podrás mejorar la apariencia y el diseño de tus sitios web para una experiencia de usuario más atractiva y agradable. Recuerda siempre practicar y experimentar para perfeccionar tus habilidades en CSS.</p>
+            </section>
+            <section class="main-section" id="Modelo_de_Caja">
+                <header>Modelo de Caja</header>
+                <p>El Modelo de Caja, también conocido como el modelo de la caja CSS (Cascading Style Sheets), es una parte fundamental en el diseño y la maquetación de sitios web. Este modelo se utiliza para controlar cómo se representan y se organizan los elementos en una página web. En esencia, consiste en dos puntos clave: el contenido y los elementos de estilo.
+                    </p>
+                    <img src="https://lenguajecss.com/css/modelo-de-cajas/que-es/modelo-de-cajas.png" alt="Modelo de caja en CSS." class="caja-css">
+                    <ol>
+                        <li><span>Contenido:</span> El contenido se refiere a todos los elementos visibles en una página web, como texto, imágenes, videos, formularios, etc. Este es el corazón de la página y determina lo que los usuarios ven y leen.</li>
+                        <li><span>Elementos de estilo:</span> Los elementos de estilo se encargan de controlar la apariencia de los elementos de contenido. Estos elementos incluyen márgenes, rellenos, bordes y dimensiones. Los estilos se aplican a través de reglas CSS (hojas de estilo en cascada) y permiten ajustar la presentación visual de los contenidos.</li>
+                    </ol>
+                    <p>La relación entre el contenido y los elementos de estilo se basa en el concepto de "caja". Cada elemento de contenido, como un párrafo o una imagen, se considera una "caja" en el modelo de caja CSS. Esta caja tiene cuatro componentes esenciales:</p>
+                    <ul>
+                        <li><span>Contenido:</span> El contenido real, como el texto de un párrafo o la imagen en sí.</li>
+                        <li><span>Relleno (padding):</span> Espacio entre el contenido y el borde de la caja. Puede dar espacio adicional alrededor del contenido.</li>
+                        <li><span>Borde (border):</span> Una línea que rodea el contenido y su relleno.</li>
+                        <li><span>Margen (margin):</span> Espacio entre la caja y otros elementos circundantes.</li>
+                    </ul>
+                    <p>Estos componentes se combinan para formar la "caja" de un elemento y se pueden ajustar utilizando reglas de estilo CSS. Por ejemplo, puedes cambiar el color del borde, el tamaño del margen o el espacio entre el contenido y el borde.</p>
+            </section>
+            <section class="main-section" id="Colores_y_Fondos">
+                <header>Colores y Fondos</header>
+                <img src="https://uniwebsidad.com/static/libros/imagenes/css/f0303.gif" alt="Colores hexadecimales." class="hexadecimales">
+                    <p><span class="font">Colores en CSS: <br><br></span> Los colores son fundamentales en el diseño web, ya que permiten dar estilo y personalidad a una página. En CSS, hay varias formas de especificar colores. La más común es utilizando valores hexadecimales como #FF5733, donde los dos primeros dígitos representan la intensidad de rojo, los siguientes dos el verde y los últimos dos el azul. También puedes usar nombres de colores predefinidos, como red, blue, green, etc. Otra opción es utilizar valores RGB, que te permiten ajustar con precisión la intensidad de cada color primario.</p>
+                    <p><span class="font">Fondos en CSS: <br><br></CSS:br></span> El fondo de un elemento HTML se define a través de propiedades de fondo en CSS. Puedes establecer fondos sólidos, gradientes, imágenes, y más. La propiedad background-color se usa para definir el color de fondo, mientras que background-image permite agregar una imagen como fondo. Además, puedes controlar la repetición y posición de la imagen con propiedades como background-repeat y background-position.</p>
+                    <p>A continuación, te mostraré un ejemplo de código que utiliza estos conceptos:</p>
+                    <code>
+                        #mi-contenedor { <br>
+                            background-color: #3498db;<br>
+                            background-image: url('imagen-de-fondo.jpg'); <br>
+                            background-repeat: no-repeat; <br>
+                            background-position: center; <br>
+                            color: #fff; <br>
+                            padding: 20px; <br>
+                          }                      
+                    </code>
+                    <p>En este ejemplo, hemos creado un contenedor con un fondo azul y una imagen de fondo. Hemos configurado el color del texto en blanco para que sea legible sobre el fondo azul. Además, hemos añadido un espaciado interno de 20px para que el contenido no se superponga con el fondo.</p>
+            </section>
+            <section class="main-section" id="Tipografía_y_Fuentes">
+                <header>Tipografía y Fuentes</header>
+                <img src="https://www.emiweb.es/medias/images/fuentes-google.png" alt="Fuentes para usar en tu página." class="tipografia">
+                <p>La tipografía y las fuentes en CSS son elementos fundamentales para el diseño web, ya que influyen en la legibilidad, la estética y la identidad visual de un sitio. En esta explicación, te proporcionaré una introducción clara y concisa, seguida de un ejemplo de código y dos puntos clave a tener en cuenta.</p>
+                <ol>
+                    <li class="genial"><span class="weight">Tipografía y Fuentes en CSS</span></li>
+                </ol>
+                <p>La tipografía se refiere al estilo y diseño de las letras y caracteres en un sitio web, mientras que las fuentes son conjuntos de caracteres con un diseño específico. En CSS, puedes controlar la apariencia de la tipografía en tu página web de manera sencilla. Para ello, puedes definir la familia de fuentes, el tamaño, el peso y otros atributos relacionados con el texto en tu sitio.</p>
+                <ol>
+                    <li> <span class="weight">Ejemplo de Código CSS</span></li>
+                </ol>
+                <p>Para aplicar estilos de tipografía y fuentes en CSS, puedes utilizar propiedades como font-family, font-size, font-weight, y muchas otras. A continuación, te presento un ejemplo de código simple para cambiar la fuente y el tamaño del texto en un párrafo:</p>
+                <code>
+                    @font-face { <br>
+                        font-family: 'MiFuentePersonalizada'; <br>
+                        src: url('ruta/a/mi-fuente.woff2') format('woff2'); <br>
+                      } <br>
+                      <br>
+                      p { <br>
+                        font-family: 'MiFuentePersonalizada', sans-serif; <br>
+                        font-size: 16px; <br>
+                      }                  
+                </code>
+                <p>En este código, primero definimos una fuente personalizada llamada 'MiFuentePersonalizada' utilizando la regla @font-face. Luego, aplicamos esta fuente al párrafo utilizando la propiedad font-family y también establecemos el tamaño de la fuente con la propiedad font-size.</p>
+                <ol>
+                    <li><span class="weight">Puntos Clave</span></li>
+                </ol>
+                <p>A continuación, se presentan dos puntos clave a tener en cuenta al trabajar con tipografía y fuentes en CSS:</p>
+                <ul>
+                    <li><span>Elección de fuentes:</span> La elección de la fuente es crucial para la estética y la legibilidad de tu sitio. Es importante seleccionar fuentes que se adapten al contenido y la audiencia de tu sitio web. Asegúrate de utilizar fuentes legibles y considera la coherencia con la identidad de tu marca.</li>
+                    <li><span>Compatibilidad y seguridad:</span> Cuando utilices fuentes personalizadas, asegúrate de que estén disponibles en diferentes formatos (como WOFF2, WOFF, TTF, etc.) para garantizar la compatibilidad en varios navegadores. Además, ten en cuenta los derechos de autor y las licencias al usar fuentes personalizadas para evitar problemas legales.</li>
+                </ul>
+            </section>
+            <section class="main-section" id="Margen_y_Relleno_(Margin_and_Padding)">
+                <header>Margen y Relleno (Margin and Padding)</header>
+                                <p> <span class="font">Margen (Margin): <br> <br></span> El margen en CSS se refiere al espacio que se encuentra alrededor del borde exterior de un elemento HTML. Los márgenes se utilizan para controlar la distancia entre un elemento y los elementos circundantes. Por ejemplo, puedes ajustar el margen de un párrafo para que tenga más espacio entre él y los otros elementos de la página.</p>
+                <code>
+                    p { <br>
+                        margin: 20px; <br>
+                      }                  
+                </code>
+                <p>En el código anterior, estamos estableciendo un margen de 20 píxeles alrededor de todos los párrafos en la página. Esto significa que habrá un espacio de 20 píxeles entre el párrafo y los elementos cercanos, como otros párrafos o imágenes.</p>
+                <p><span class="font">Relleno (Padding): <br> <br></span> El relleno en CSS se refiere al espacio que se encuentra entre el contenido de un elemento y su borde interior. El relleno se utiliza para controlar la distancia entre el contenido de un elemento y su borde. Por ejemplo, puedes ajustar el relleno de un cuadro para que el texto dentro de él tenga más espacio alrededor.</p>
+                <code>
+                    div { <br>
+                        padding: 10px; <br>
+                      }                  
+                </code>
+                <p>En el código anterior, estamos estableciendo un relleno de 10 píxeles dentro de un elemento div. Esto significa que habrá un espacio de 10 píxeles entre el contenido del div y su borde.</p>
+            </section>
+            <section class="main-section" id="Estilos_de_Texto_y_Enlaces">
+                <header>Estilos de Texto y Enlaces</header>
+                <p>Los estilos de texto en CSS se utilizan para dar formato y apariencia a los textos en una página web. Puedes controlar aspectos como el tipo de fuente, el tamaño, el color, el espaciado entre letras y líneas, y mucho más. Aquí tienes un ejemplo sencillo de cómo aplicar algunos estilos de texto en CSS:</p>
+                <code>
+                    p { <br>
+                        color: blue; <br>
+                      } <br>
+                      <br>
+                      h1 { <br>
+                        font-family: Arial, sans-serif; <br>
+                      } <br>
+                      <br>
+                      h2 { <br>
+                        font-size: 24px; <br>
+                      } <br>
+                      <br>
+                      p { <br>
+                        line-height: 1.5; <br>
+                      }                  
+                </code>
+                <p>Los enlaces en CSS permiten definir cómo se ven los vínculos en tu sitio web. Esto incluye el color, la apariencia al pasar el mouse sobre ellos y más. A continuación, te muestro un ejemplo de cómo estilizar los enlaces en CSS:</p>
+                <code>
+                    a { <br>
+                        color: green; <br>
+                      } <br>
+                       <br>
+                      a:hover { <br>
+                        color: red; <br>
+                      } <br>
+                       <br>
+                      a:active { <br>
+                        text-decoration: underline; <br>
+                      }                  
+                </code>
+                <p>En el código de ejemplo, hemos utilizado selectores de CSS para aplicar estilos a diferentes elementos. Por ejemplo, p se refiere a los párrafos, h1 y h2 son para encabezados de diferentes niveles, y a representa los enlaces.</p>
+                <p>Para los estilos de texto, hemos cambiado el color del texto a azul para los párrafos, la fuente a Arial para los encabezados de nivel 1, aumentado el tamaño de fuente para los encabezados de nivel 2 y ajustado el espaciado entre líneas para los párrafos.</p>
+                <p>En cuanto a los estilos de enlaces, hemos establecido el color de los enlaces sin visitar a verde, cambiado el color al pasar el mouse sobre ellos a rojo y subrayado los enlaces cuando se hacen clic en ellos.</p>
+                <p>Estos son solo ejemplos simples, y CSS ofrece una amplia gama de propiedades para personalizar aún más el aspecto de los textos y enlaces en tu sitio web. La clave es comprender cómo funcionan los selectores y las propiedades para aplicar los estilos deseados.</p>
+            </section>
+            <section class="main-section" id="Estilización_de_Listas">
+                <header>Estilización de Listas</header>
+                <p>La estilización de listas en CSS es un proceso mediante el cual puedes personalizar la apariencia de las listas HTML, como las listas ordenadas (ul) y desordenadas (ol), así como los elementos de lista (li). Esto te permite crear listas con diseños únicos y atractivos que se ajusten a la estética de tu sitio web. A continuación, te proporcionaré un ejemplo de código CSS y dos puntos clave sobre la estilización de listas.</p>
+                <p>Primero, aquí tienes un ejemplo simple de cómo estilizar una lista desordenada (ul) y sus elementos de lista (li) utilizando CSS:</p>
+                <code>
+                    ul { <br>
+                        list-style-type: square; <br>
+                        margin-left: 20px; <br>
+                        padding-left: 0; <br>
+                      } <br>
+                       <br>
+                      li { <br>
+                        color: #333; <br>
+                        margin-bottom: 5px; <br>
+                      }                  
+                </code>
+                <p>Este código CSS cambiará la apariencia de una lista desordenada para que tenga marcadores cuadrados y un espaciado adecuado entre los elementos de la lista.</p>
+                <h3>Punto 1: Personalización de marcadores y numeración</h3>
+                <p>Una de las formas más comunes de estilizar listas es personalizar los marcadores o números que aparecen antes de cada elemento de lista. CSS ofrece varias propiedades que permiten cambiar el tipo de marcador (como cuadrados, círculos, números, etc.) o personalizar su apariencia, como su color, tamaño y posición. Puedes utilizar list-style-type para cambiar el tipo de marcador y list-style-image para utilizar imágenes personalizadas como marcadores.</p>
+                <h3>Punto 2: Alineación y diseño de la lista</h3>
+                <p>Otro aspecto importante de la estilización de listas es la alineación y el diseño. Puedes controlar la alineación de la lista, el margen y el relleno para ajustar la apariencia de la lista en relación con el contenido circundante. Esto es útil para crear diseños de página más atractivos y legibles. Por ejemplo, puedes ajustar el margen izquierdo de la lista para alinearla con otros elementos en la página y eliminar el relleno predeterminado para un mejor control sobre el espaciado.</p>
+            </section>
+            <section class="main-section" id="Creación_de_Menús_de_Navegación_(Navigation_Menus)">
+                <header>Creación de Menús de Navegación (Navigation Menus)</header>
+                <p>La creación de menús de navegación con CSS es una habilidad esencial para diseñadores web y desarrolladores. Un menú de navegación es una parte crucial de cualquier sitio web, ya que ayuda a los usuarios a encontrar y acceder fácilmente a las diferentes secciones y páginas del sitio. En este artículo, te mostraré cómo crear un menú de navegación simple con CSS y te explicaré dos puntos importantes que debes tener en cuenta al diseñarlos.</p>
+                <p>Primero, crearemos un menú de navegación horizontal básico utilizando HTML y CSS. Aquí tienes el código:</p>
+                <code>
+                    &lt;!DOCTYPE html&gt; <br>
+                    &lt;html&gt; <br>
+                    &lt;head&gt; <br>
+                        &lt;link rel="stylesheet" type="text/css" href="styles.css"&gt; <br>
+                    &lt;/head&gt; <br>
+                    &lt;body&gt; <br>
+                        &lt;nav&gt; <br>
+                            &lt;ul&gt; <br>
+                                &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt; <br>
+                                &lt;li&gt;&lt;a href="#"&gt;Acerca de&lt;/a&gt;&lt;/li&gt; <br>
+                                &lt;li&gt;&lt;a href="#"&gt;Servicios&lt;/a&gt;&lt;/li&gt; <br>
+                                &lt;li&gt;&lt;a href="#"&gt;Contacto&lt;/a&gt;&lt;/li&gt; <br>
+                            &lt;/ul&gt; <br>
+                        &lt;/nav&gt; <br>
+                    &lt;/body&gt; <br>
+                    &lt;/html&gt; <br> <br>
+                </code>
+                <code> 
+                    nav { <br>
+                        background-color: #333; <br>
+                    } <br>
+                     <br>
+                    ul { <br>
+                        list-style-type: none; <br>
+                        padding: 0; <br>
+                    } <br>
+                     <br>
+                    li { <br>
+                        display: inline; <br>
+                        margin-right: 20px; <br>
+                    }
+                     <br>
+                    a { <br>
+                        text-decoration: none; <br>
+                        color: white; <br>
+                    }
+                </code>
+                <p>Este código crea un menú de navegación horizontal simple con cuatro elementos: Inicio, Acerca de, Servicios y Contacto. Ahora, vamos a explicar dos puntos clave:</p>
+                <ol>
+                    <li><span class="weight">Estilo y Diseño:</span></li>
+                </ol>
+                <p>El estilo y diseño de tu menú de navegación son cruciales. En el ejemplo anterior, hemos aplicado un fondo gris oscuro al menú de navegación (nav) y hemos eliminado las viñetas de la lista no ordenada (ul). Cada elemento de la lista (li) se muestra en línea y tiene un margen derecho para separar los elementos. Los enlaces (a) se muestran en blanco y no subrayados. Puedes personalizar estos estilos para que se ajusten al aspecto de tu sitio web.</p>
+                <ol>
+                    <li><span class="weight">Responsividad:</span></li>
+                </ol>
+                <p>Es importante que tu menú de navegación sea responsive, es decir, que se adapte a diferentes tamaños de pantalla, como en dispositivos móviles. Puedes lograr esto utilizando CSS para cambiar el diseño del menú cuando el ancho de la pantalla sea menor. Por ejemplo, puedes utilizar consultas de medios (media queries) para reorganizar el menú en un diseño vertical o incluso crear un menú desplegable en pantallas más pequeñas.</p>
+                <p>Recuerda que este es solo un ejemplo básico de cómo crear un menú de navegación en CSS. Puedes expandir y personalizar este código según las necesidades de tu sitio web. La práctica constante y la experimentación te ayudarán a perfeccionar tus habilidades en la creación de menús de navegación atractivos y funcionales.</p>
+            </section>
+            <section class="main-section" id="Estilos_de_Tablas_(Table_Styles)">
+                <header>Estilos de Tablas (Table Styles)</header>
+                <p>Los "Estilos de Tablas" o "Table Styles" en CSS son un conjunto de propiedades que te permiten personalizar la apariencia de las tablas en tu sitio web. Las tablas son elementos HTML que se utilizan para organizar datos en filas y columnas, y a menudo se usan para mostrar información tabulada de manera organizada y legible. Aplicar estilos a las tablas con CSS es fundamental para lograr un diseño atractivo y coherente en tu página web.</p>
+                <p>A continuación, te proporcionaré un código de ejemplo para mostrar cómo aplicar algunos estilos básicos a una tabla HTML y te explicaré dos puntos clave para comprender mejor estos estilos:</p>
+                <code>
+                    &lt;!DOCTYPE html&gt; <br>
+                    &lt;html&gt; <br>
+                    &lt;head&gt; <br>
+                    &lt;/head&gt; <br>
+                    &lt;body&gt; <br>
+    
+                    &lt;style&gt; <br>
+      .custom-table { <br>
+        width: 100%; <br>
+        border-collapse: collapse; <br>
+      } <br>
+     <br>
+      .custom-table, .custom-table th, .custom-table td { <br>
+        border: 1px solid black; <br>
+      } <br>
+     <br>
+      .custom-table th, .custom-table td { <br>
+        padding: 8px; <br>
+        text-align: left; <br>
+      } <br>
+     <br>
+      .custom-table th { <br>
+        background-color: #4CAF50; <br>
+        color: white; <br>
+      } <br>
+    &lt;/style&gt; <br>
+     <br>
+    &lt;table class="custom-table"&gt; <br>
+      &lt;tr&gt; <br>
+        &lt;th&gt;Nombre&lt;/th&gt; <br>
+        &lt;th&gt;Edad&lt;/th&gt; <br>
+        &lt;th&gt;País&lt;/th&gt; <br>
+      &lt;/tr&gt; <br>
+      &lt;tr&gt; <br>
+        &lt;td&gt;Juan&lt;/td&gt; <br>
+        &lt;td&gt;25&lt;/td&gt; <br>
+        &lt;td&gt;México&lt;/td&gt; <br>
+      &lt;/tr&gt; <br>
+      &lt;tr&gt; <br>
+        &lt;td&gt;Maria&lt;/td&gt; <br>
+        &lt;td&gt;30&lt;/td&gt; <br>
+        &lt;td&gt;España&lt;/td&gt; <br>
+      &lt;/tr&gt; <br>
+    &lt;/table&gt; <br>
+     <br>
+    &lt;table&gt; <br>
+      &lt;tr&gt; <br>
+        &lt;th&gt;Encabezado&lt;/th&gt; <br>
+        &lt;th&gt;Otro&lt;/th&gt; <br>
+      &lt;/tr&gt; <br>
+      &lt;tr&gt; <br>
+        &lt;td&gt;Dato&lt;/td&gt; <br>
+        &lt;td&gt;Dato&lt;/td&gt; <br>
+      &lt;/tr&gt; <br>
+    &lt;/table&gt; <br>
+     <br>
+    &lt;/body&gt; <br>
+    &lt;/html&gt; <br>
+                </code>
+                <h3>Propiedades básicas de estilo de tabla</h3>
+                <p>En el código de ejemplo, hemos aplicado varios estilos a la tabla. La propiedad border-collapse se utiliza para asegurar que los bordes de las celdas se fusionen correctamente, creando un aspecto más limpio. La propiedad border establece un borde de 1 píxel de ancho y color negro para todas las celdas. Además, hemos configurado el padding y la alineación del texto en las celdas y hemos dado un estilo de fondo y color al encabezado de la tabla con la propiedad background-color.</p>
+                <h3>Punto 2: Personalización avanzada</h3>
+                <p>Aunque este ejemplo es sencillo, puedes personalizar aún más tus tablas con CSS. Puedes cambiar los colores, fuentes, tamaños y estilos de borde según tus preferencias. También puedes usar pseudo-clases como :hover para resaltar filas cuando el usuario pasa el cursor sobre ellas. La personalización avanzada permite adaptar las tablas a la estética de tu sitio web y mejorar la experiencia del usuario.</p>
+            </section>
+            <section class="main-section" id="Animaciones_y_Transiciones_(Animations_and_Transitions)">
+                <header>Animaciones y Transiciones (Animations and Transitions)</header> 
+                <img src="https://antofernandez.b-cdn.net/wp-content/uploads/2017/08/Grafica-explicacion-animaciones-y-transiciones.jpg" alt="Animación y transición en CSS.">
+                <p>Las animaciones y transiciones en CSS son herramientas poderosas que te permiten agregar interactividad y dinamismo a tus páginas web. En pocas palabras, las animaciones se utilizan para crear efectos visuales que cambian gradualmente con el tiempo, mientras que las transiciones son cambios suaves en propiedades CSS cuando un elemento pasa de un estado a otro. Aquí te proporcionaré un ejemplo de código y te explicaré dos puntos clave de estas técnicas:</p>
+                <code>
+                    @keyframes desvanecer { <br>
+                        from { opacity: 1; } <br>
+                        to { opacity: 0; } <br>
+                      } <br>
+                       <br>
+                      #mi-elemento { <br>
+                        animation: desvanecer 2s ease-in-out; <br>
+                      } <br>
+                       <br>
+                      a { <br>
+                        transition: color 0.3s ease; <br>
+                      } <br>
+                       <br>
+                      a:hover { <br>
+                        color: red; <br>
+                      }           <br>        
+                </code>
+                <ol>
+                    <li><span class="weight">Animaciones en CSS:</span></li>
+                </ol>
+                <p>Las animaciones son una forma de crear cambios graduales en las propiedades CSS a lo largo del tiempo. En el ejemplo, hemos definido una animación llamada 'desvanecer' que cambia gradualmente la opacidad de un elemento de 1 (completamente visible) a 0 (completamente transparente) en 2 segundos. Luego, aplicamos esta animación al elemento con el ID 'mi-elemento' usando la propiedad animation. Cuando se carga la página, el elemento se desvanecerá suavemente.</p>
+                <ol>
+                    <li><span class="weight">Transiciones en CSS:</span></li>
+                </ol>
+                <p>Las transiciones son otra forma de agregar dinamismo a tu sitio web. En el código, hemos establecido una transición en los enlaces (<a>) que suaviza el cambio de color durante 0.3 segundos. Cuando pasas el cursor sobre un enlace, la propiedad color cambia suavemente a rojo gracias a la transición definida. Las transiciones son ideales para crear efectos sutiles de cambio de estado en respuesta a las interacciones del usuario.</p>
+            </section>
+        </main>
+    </body>
+</html>
+

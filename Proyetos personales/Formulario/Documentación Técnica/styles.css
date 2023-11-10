@@ -1,0 +1,188 @@
+* {
+    scroll-behavior: smooth;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(157, 184, 209);
+    margin: 0;
+}
+
+#navbar {
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    top: 0;
+    background-color: rgb(166, 196, 201);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+#navbar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(52, 49, 49);
+    display: block;
+    transition: 0.3s;
+    max-width: 300px;
+}
+
+@media (max-width: 378px) {
+    #navbar {
+        position: absolute;
+        left: 8px;
+        width: 329px;
+        height: 490px;    
+    }
+
+    
+    section {
+        position: relative;
+        top: 200px;
+        left: -264px;
+        width: 100%;
+    }
+
+    .hola {
+        margin-top: 300px;
+    }
+}
+
+#navbar a:hover {
+    color: rgb(247, 242, 242);
+}
+
+
+
+.over {
+    color: rgb(39, 58, 75);
+}
+
+.nav-or{
+    padding: 10px;
+}
+
+.nav-or a {
+    padding-left: 0;
+}
+
+nav a {
+    width: 100%;
+    border-bottom: 3px solid rgb(207, 233, 212);
+    position: relative;
+    left: -8px;
+}
+
+.pol {
+    border-top: 3px solid rgb(207, 233, 212);
+}
+
+.logo-css {
+    width: 40px;
+    border-radius: 10px;
+    position: absolute;
+    left: 190px;
+    top: -4px;
+}
+
+.block {
+    display: inline;
+    position: relative;
+    top: 10px;
+}
+
+.sintaxis {
+    width: 100%;
+    border-radius: 10px;
+}
+
+li {
+    list-style-type: circle;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+.color {
+    position: relative;
+    top: -7px;
+}
+
+.caja-css {
+    width: 100%;
+}
+
+span {
+    color: white;
+}
+
+.hexadecimales {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.font {
+    font-size: 20px;
+}
+
+.tipografia {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.weight {
+    font-size: 20px;
+    color: rgb(243, 234, 220);
+}
+
+img {
+    width: 100%;
+}
+
+code {
+    background-color: rgb(208, 242, 242);
+    border-radius: 10px;
+}
+
+.hola {
+    font-size: 1.5em;
+    font-weight: 900
+}
+
+header {
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 10px;
+}
+
+section {
+    margin-left: 264px;
+    text-align: justify;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
